@@ -1,7 +1,5 @@
 <html>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 <head>
-    
 <style>
 blockquote, q {
   quotes: none;
@@ -43,8 +41,8 @@ table {
 
 .switch {
   position: relative;
-  height: 26px;
-  width: 120px;
+   height: 50px;                        /*INCREASE THE HEIGHT OF THE BUTTON */
+  width: 200px;
   margin: 20px auto;
   background: rgba(0, 0, 0, 0.25);
   border-radius: 3px;
@@ -69,11 +67,11 @@ table {
 }
 
 .switch-label-off {
-  padding-left: 2px;
+   padding-left: 50px;            /*for changing the position of text "off" */
 }
 
 .switch-label-on {
-  padding-right: 2px;
+  padding-right: 20px;
 }
 
 
@@ -96,7 +94,7 @@ table {
   transition-property: color, text-shadow;
 }
 .switch-input:checked + .switch-label-on ~ .switch-selection {
-  left: 60px;
+  left: 100px;
   /* Note: left: 50%; doesn't transition in WebKit */
 }
 
@@ -106,8 +104,8 @@ table {
   top: 2px;
   left: 2px;
   display: block;
-  width: 58px;
-  height: 22px;
+  width: 100px;            /*for changing the size of moving small box  widht*/
+  height: 50px;
   border-radius: 3px;
   background-color: #65bd63;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9dd993), color-stop(100%, #65bd63));
@@ -140,7 +138,8 @@ table {
           <span class="switch-selection"></span>
         </div>
       </div>
-
+<!--1. for increasing the width line 45 
+    2. for increasing the height line 44 -->
 </body>
 
 </html>
