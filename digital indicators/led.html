@@ -1,0 +1,64 @@
+<html>
+<head>
+    <style>
+        body {
+  background: #333;
+}
+
+#info {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: absolute;
+}
+
+.led {
+	border-radius: 50%;
+	background-color: #220000;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+	margin: 20px auto;
+	border: 3px solid #222;
+}
+
+.led:hover, .led.active {
+	background-color: #AA0000;
+	box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.4);
+	border: 3px solid rgba(120, 0, 0, 1);
+}
+
+.led .hilight {
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: rgba(255,255,255,0.5);
+	top: 7px;
+	left: 7px;
+	box-shadow: 3px 4px 7px 9px rgba(180, 0, 0, 0.6);
+}
+
+.led:hover .hilight, .led.active .hilight {
+	background-color: rgba(255,255,255,1);
+	box-shadow: 4px 4px 6px 7px rgba(255, 0, 0, 1);
+}
+    </style>
+</head>
+<body>
+<div id="info">Hover over ></div>
+
+<div class="led active">
+		  <div class="hilight"></div>
+	</div>
+
+<div class="led">
+		  <div class="hilight"></div>
+	</div>
+
+<div class="led">
+		  <div class="hilight"></div>
+	</div>
+    </body>
+    </html>

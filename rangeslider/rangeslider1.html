@@ -1,0 +1,78 @@
+<html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>   
+    <style>
+        .grid1{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 10px;
+            grid-column-gap: 50px;
+            grid-row-gap: 100px;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(54, 52, 52);">
+    <h1><font color=white><center>Range Slider</h1></font></center>
+    <br><br><br><br>
+    <div class="grid1">
+    <input type="text" class="js-range-slider" name="my_range" value="" />
+    <input type="text" class="js-range-slider1" name="my_range" value="" />
+    <input type="text" class="js-range-slider2" name="my_range" value="" />
+    <input type="text" class="js-range-slider3" name="my_range" value="" />
+    <input type="text" class="js-range-slider4" name="my_range" value="" />
+    <!-- https://htmlstream.com/preview/front-v2.0/documentation/plugins/countdown.html#how-to-use 
+        for guidance follow the link-->
+    </div>
+
+</body>
+<SCRIPT>
+$(".js-range-slider").ionRangeSlider({
+    type: "double",                 //one side slider so "single" if want both side then enter as "double"
+    min: 0,                         //start value
+    max: 1000,                       //end value
+    skin: "big" , 
+    grid_num:10,                        //for design of slider flat,modern,sharp,round,square
+    grid: true                        //for pointer over the scale false means no pointer and true means pointer
+});
+</SCRIPT>
+<SCRIPT>
+    $(".js-range-slider1").ionRangeSlider({
+        type: "single",                  //one side slider so "single" if want both side then enter as "double"
+        min: 0,                             //start value
+        max: 1000,                       //end value
+        skin: "flat" ,                    //for design of slider flat,modern,sharp,round,square
+        grid: true                        //for pointer over the scale false means no pointer and true means pointer
+    });
+    </SCRIPT>
+    <SCRIPT>
+        $(".js-range-slider2").ionRangeSlider({
+            type: "double",                 //one side slider so "single" if want both side then enter as "double"
+            min: 0,                         //start value
+            max: 1000,                       //end value
+            skin: "modern" , 
+            grid_num:20,                     //for design of slider flat,modern,sharp,round,square
+            grid: true                        //for pointer over the scale false means no pointer and true means pointer
+        });
+        </SCRIPT>
+         <SCRIPT>
+            $(".js-range-slider3").ionRangeSlider({
+                type: "double",                 //one side slider so "single" if want both side then enter as "double"
+                min: 0,                         //start value
+                max: 1000,                       //end value
+                skin: "round" , 
+                                                     //for design of slider flat,modern,sharp,round,square
+                grid: true                        //for pointer over the scale false means no pointer and true means pointer
+            });
+            </SCRIPT>
+             <SCRIPT>
+                $(".js-range-slider4").ionRangeSlider({
+                    type: "single",                 //one side slider so "single" if want both side then enter as "double"
+                    min: 0,                         //start value
+                    max: 1000,                       //end value
+                    skin: "square" ,                 //for design of slider flat,modern,sharp,round,square
+                    grid: true                       //for pointer over the scale false means no pointer and true means pointer
+                });
+                </SCRIPT>
+</html>
